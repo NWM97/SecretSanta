@@ -11,26 +11,7 @@
         Bienvenue sur la page secrète de la recette ! Pour découvrir le secret des délicieux cookies, utilisez vos compétences en déchiffrement.
     </p>
     <p id="encryptedRecipe">
-        <!-- # Fonction pour chiffrer la recette
-def encrypt_recipe(recipe):
-    key = 10  # Clé de chiffrement (peut être n'importe quel nombre entier)
-    encrypted_recipe = ""
-
-    for char in recipe:
-        encrypted_char = ord(char) + key
-        encrypted_recipe += str(encrypted_char) + ","
-
-    return encrypted_recipe[:-1]  # Retirer la virgule finale
-
-# Recette à chiffrer
-recipe_to_encrypt = """
-# Instructions de la recette...
-print("Bonne dégustation !")
-"""
-
-# Chiffrer la recette
-encrypted_recipe = encrypt_recipe(recipe_to_encrypt)
-print(f"Recette chiffrée :\n{encrypted_recipe}") -->
+        <!-- Insérez ici la recette cryptée -->
     </p>
 
     <script>
