@@ -13,7 +13,7 @@
         Bienvenue sur la page secrète de la recette ! Pour découvrir le secret des délicieux cookies, utilisez vos compétences en déchiffrement.
     </p>
     <p id="encryptedRecipe">
-        <!-- Insérez ici la recette cryptée -->
+        <!-- Remplacez ceci par votre recette cryptée -->
         <!-- Chiffrée à titre d'exemple -->
         72,101,108,108,111,32,65,100,114,105,97,110,33
     </p>
@@ -24,11 +24,23 @@
             // Récupérer la recette cryptée
             var encryptedRecipe = document.getElementById('encryptedRecipe').innerText;
             
-            // Déchiffrer la recette (Méthode de déchiffrement)
-            var decryptedRecipe = "";  // Remplacez cela par votre logique de déchiffrement
+            // Déchiffrer la recette (Remplacez cela par votre logique de déchiffrement)
+            var decryptedRecipe = decrypt(encryptedRecipe);
             
             // Afficher la recette déchiffrée
             document.getElementById('encryptedRecipe').innerText = decryptedRecipe;
+        }
+
+        // Fonction de déchiffrement factice (à remplacer par votre propre logique)
+        function decrypt(encryptedText) {
+            var decryptedText = "";
+            // Logique de déchiffrement (à remplacer)
+            // Exemple basique : ajouter 1 à la valeur ASCII de chaque caractère
+            for (var i = 0; i < encryptedText.length; i++) {
+                var charCode = encryptedText.charCodeAt(i);
+                decryptedText += String.fromCharCode(charCode + 1);
+            }
+            return decryptedText;
         }
 
         // Appeler la fonction de déchiffrement au chargement de la page
