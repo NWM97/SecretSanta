@@ -7,19 +7,26 @@
 </head>
 <body>
     <h1>Recette Secrète</h1>
+    
+    <!-- Recette cryptée -->
     <p>
         Bienvenue sur la page secrète de la recette ! Pour découvrir le secret des délicieux cookies, utilisez vos compétences en déchiffrement.
     </p>
     <p id="encryptedRecipe">
         <!-- Insérez ici la recette cryptée -->
+        <!-- Chiffrée à titre d'exemple -->
+        72,101,108,108,111,32,65,100,114,105,97,110,33
     </p>
 
     <script>
         // Fonction de déchiffrement
         function decryptRecipe() {
-            // Insérez ici le code JavaScript de déchiffrement (Méthode 2 ou 3)
-            // ...
-
+            // Récupérer la recette cryptée
+            var encryptedRecipe = document.getElementById('encryptedRecipe').innerText;
+            
+            // Déchiffrer la recette (Méthode de déchiffrement)
+            var decryptedRecipe = "";  // Remplacez cela par votre logique de déchiffrement
+            
             // Afficher la recette déchiffrée
             document.getElementById('encryptedRecipe').innerText = decryptedRecipe;
         }
