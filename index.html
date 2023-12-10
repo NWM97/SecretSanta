@@ -1,71 +1,82 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recette des Schwowebredele</title>
     <style>
-        /* ... (votre style CSS ici) ... */
+        /* Votre style CSS ici */
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-image: url('https://imageurl.com'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* ... (le reste de votre style CSS) ... */
+
+        h2 {
+            font-size: 24px;
+        }
+
+        body > h2 {
+            margin-top: 40px;
+        }
+
+        body > ol {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        /* ... (le reste de votre style CSS) ... */
+
+        body {
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+        }
+
+        a {
+            text-decoration: none;
+            color: #3498db;
+        }
     </style>
 </head>
 <body>
     <div class="christmas-icons">
-        <!-- ... (vos pictogrammes de Noël ici) ... -->
+        <div class="christmas-icon icon1" style="top: 30%; left: 10%;"></div>
+        <div class="christmas-icon icon2" style="top: 60%; left: 50%;"></div>
+        <div class="christmas-icon icon3" style="top: 20%; left: 80%;"></div>
     </div>
 
-    <h1 lang="fr">Recette des Schwowebredele</h1>
-    <h1 lang="en" style="display:none;">Schwowebredele Recipe</h1>
+    <h1>Recette des Schwowebredele</h1>
 
-    <p lang="fr">
+    <p>
         Hello Adrian ! Amuse-toi bien à cuisiner ces délicieux biscuits traditionnels alsaciens de Noël.
     </p>
-    <p lang="en" style="display:none;">
-        Hello Adrian! Have fun baking these delicious traditional Alsatian Christmas cookies.
-    </p>
 
-    <h2 lang="fr">Ingrédients dans le bocal :</h2>
-    <h2 lang="en" style="display:none;">Ingredients in the jar:</h2>
-    <ul lang="fr">
-        <li>250 g de farine</li>
-        <li>125 g de sucre</li>
-        <li>125 g de poudre d'amande</li>
-        <li>1 cuillère à café de cannelle moulue</li>
-    </ul>
-    <ul lang="en" style="display:none;">
-        <li>250g of flour</li>
-        <li>125g of sugar</li>
-        <li>125g of almond powder</li>
-        <li>1 teaspoon of ground cinnamon</li>
-    </ul>
+    <h2 id="ingredients">Ingrédients dans le bocal :</h2>
+    <!-- ... (votre liste d'ingrédients) ... -->
 
-    <!-- ... (et ainsi de suite pour le reste du contenu) ... -->
+    <h2 id="completer">Pour compléter la recette, tu devras ajouter :</h2>
+    <!-- ... (votre liste d'ingrédients à ajouter) ... -->
 
-    <p lang="fr">Bonne dégustation !</p>
-    <p lang="en" style="display:none;">Enjoy baking these traditional Alsatian Christmas cookies.</p>
-    
+    <h2 id="preparation">Préparation :</h2>
+    <!-- ... (votre liste d'instructions) ... -->
+
+    <p id="degustation">Bonne dégustation !</p>
     <img src="https://www.cookomix.com/wp-content/uploads/2016/12/schwowebredele-thermomix-800x600.jpg" alt="Schwowebredele Image">
-    
-    <script>
-        function switchLanguage(lang) {
-            var frElements = document.querySelectorAll('[lang="fr"]');
-            var enElements = document.querySelectorAll('[lang="en"]');
-            
-            if (lang === 'fr') {
-                frElements.forEach(function(element) {
-                    element.style.display = 'block';
-                });
-                enElements.forEach(function(element) {
-                    element.style.display = 'none';
-                });
-            } else if (lang === 'en') {
-                frElements.forEach(function(element) {
-                    element.style.display = 'none';
-                });
-                enElements.forEach(function(element) {
-                    element.style.display = 'block';
-                });
-            }
-        }
-    </script>
+
+    <!-- Ancres pour la langue -->
+    <p><a href="#ingredients">Ingrédients</a> | <a href="#completer">À compléter</a> | <a href="#preparation">Préparation</a> | <a href="#degustation">Bonne dégustation</a></p>
 </body>
 </html>
