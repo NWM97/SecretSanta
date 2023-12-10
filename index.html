@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recette des Schwowebredele</title>
     <style>
-        /* Votre style CSS ici */
-
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f7f7f7;
@@ -20,13 +18,23 @@
             background-attachment: fixed;
         }
 
-        /* ... (le reste de votre style CSS) ... */
+        h1, h2 {
+            color: #d35400;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: center;
+        }
 
         ul, ol {
             font-size: 16px;
             line-height: 1.4;
             margin-bottom: 20px;
-            text-align: center; /* Modification ici */
+            text-align: left;
             display: inline-block;
             vertical-align: top;
         }
@@ -35,102 +43,172 @@
             margin-bottom: 10px;
         }
 
-        /* ... (le reste de votre style CSS) ... */
+        ol {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: left;
+            display: inline-block;
+            vertical-align: top;
+        }
 
         p:last-child {
             margin-top: 40px;
-            font-size: 24px; /* Modification ici */
+            font-size: 24px;
             font-weight: bold;
             color: #d35400;
             text-align: center;
         }
 
-        /* ... (le reste de votre style CSS) ... */
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+        }
+
+        a {
+            text-decoration: none;
+            color: #3498db;
+        }
+
+        /* Pictogrammes de Noël */
+        .christmas-icons {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .christmas-icon {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-size: contain;
+            animation: float 5s infinite;
+        }
+
+        .icon1 { background-image: url('https://imageurl.com/icon1.png'); } 
+        .icon2 { background-image: url('https://imageurl.com/icon2.png'); } 
+        .icon3 { background-image: url('https://imageurl.com/icon3.png'); } 
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        /* Styles spécifiques pour les langues */
+        .lang-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .lang-container h2 {
+            text-align: center;
+        }
+
+        .lang-container ol {
+            margin-left: 0;
+            padding-left: 20px;
+        }
+
+        .lang-container p:last-child {
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="christmas-icons">
         <div class="christmas-icon icon1" style="top: 30%; left: 10%;"></div>
-        <div class "christmas-icon icon2" style="top: 60%; left: 50%;"></div>
+        <div class="christmas-icon icon2" style="top: 60%; left: 50%;"></div>
         <div class="christmas-icon icon3" style="top: 20%; left: 80%;"></div>
     </div>
 
-    <!-- Ancres pour la langue -->
     <p><a href="#francais">Français</a> | <a href="#anglais">Anglais</a></p>
 
-    <h1 id="francais">Recette des Schwowebredele</h1>
+    <div class="lang-container" id="francais">
+        <h1>Recette des Schwowebredele</h1>
+        <p>Hello Adrian ! Amuse-toi bien à cuisiner ces délicieux biscuits traditionnels alsaciens de Noël.</p>
 
-    <p>
-        Hello Adrian ! Amuse-toi bien à cuisiner ces délicieux biscuits traditionnels alsaciens de Noël.
-    </p>
+        <h2>Ingrédients dans le bocal :</h2>
+        <ul>
+            <li>250 g de farine</li>
+            <li>125 g de sucre</li>
+            <li>125 g de poudre d'amande</li>
+            <li>1 cuillère à café de cannelle moulue</li>
+        </ul>
 
-    <h2 id="ingredients">Ingrédients dans le bocal :</h2>
-    <ul>
-        <li>250 g de farine</li>
-        <li>125 g de sucre</li>
-        <li>125 g de poudre d'amande</li>
-        <li>1 cuillère à café de cannelle moulue</li>
-    </ul>
+        <h2>Pour compléter la recette, tu devras ajouter :</h2>
+        <ul>
+            <li>125 g de beurre mou</li>
+            <li>1 œuf</li>
+            <li>Sucre glace (pour saupoudrer)</li>
+        </ul>
 
-    <h2 id="completer">Pour compléter la recette, tu devras ajouter :</h2>
-    <ul>
-        <li>125 g de beurre mou</li>
-        <li>1 œuf</li>
-        <li>Sucre glace (pour saupoudrer)</li>
-    </ul>
+        <h2>Préparation :</h2>
+        <ol>
+            <li>Préchauffez le four à 180°C (thermostat 6).</li>
+            <li>Ajoutez tous les ingrédients secs du bocal dans un saladier : la farine, le sucre, la poudre d'amande et la cannelle.</li>
+            <li>Ajoutez l'œuf et le beurre mou. Pétrissez la pâte jusqu'à ce qu'elle soit homogène.</li>
+            <li>Formez une boule avec la pâte et laissez-la reposer au réfrigérateur pendant environ 30 minutes.</li>
+            <li>Sur un plan de travail légèrement fariné, étalez la pâte sur une épaisseur d'environ 5 mm.</li>
+            <li>À l'aide d'emporte-pièces de différentes formes, découpez les biscuits et placez-les sur une plaque de cuisson recouverte de papier sulfurisé.</li>
+            <li>Enfournez pendant environ 10-12 minutes, ou jusqu'à ce que les biscuits soient légèrement dorés.</li>
+            <li>Laissez les biscuits refroidir sur une grille.</li>
+            <li>Saupoudrez les biscuits refroidis de sucre glace.</li>
+        </ol>
 
-    <h2 id="preparation">Préparation :</h2>
-    <ol>
-        <li>Préchauffez le four à 180°C (thermostat 6).</li>
-        <li>Ajoutez tous les ingrédients secs du bocal dans un saladier : la farine, le sucre, la poudre d'amande et la cannelle.</li>
-        <li>Ajoutez l'œuf et le beurre mou. Pétrissez la pâte jusqu'à ce qu'elle soit homogène.</li>
-        <li>Formez une boule avec la pâte et laissez-la reposer au réfrigérateur pendant environ 30 minutes.</li>
-        <li>Sur un plan de travail légèrement fariné, étalez la pâte sur une épaisseur d'environ 5 mm.</li>
-        <li>À l'aide d'emporte-pièces de différentes formes, découpez les biscuits et placez-les sur une plaque de cuisson recouverte de papier sulfurisé.</li>
-        <li>Enfournez pendant environ 10-12 minutes, ou jusqu'à ce que les biscuits soient légèrement dorés.</li>
-        <li>Laissez les biscuits refroidir sur une grille.</li>
-        <li>Saupoudrez les biscuits refroidis de sucre glace.</li>
-    </ol>
+        <p><strong>Bonne dégustation !</strong></p>
+        <img src="https://www.cookomix.com/wp-content/uploads/2016/12/schwowebredele-thermomix-800x600.jpg" alt="Schwowebredele Image">
+    </div>
 
-    <p id="degustation"><strong>Bonne dégustation !</strong></p>
-    <img src="https://www.cookomix.com/wp-content/uploads/2016/12/schwowebredele-thermomix-800x600.jpg" alt="Schwowebredele Image">
+    <div class="lang-container" id="anglais">
+        <h1>Schwowebredele Recipe</h1>
+        <p>Hello Adrian! Have fun baking these delicious traditional Alsatian Christmas cookies.</p>
 
-    <!-- Section en anglais -->
-    <h1 id="anglais">Schwowebredele Recipe</h1>
+        <h2>Ingredients in the jar:</h2>
+        <ul>
+            <li>250 g of flour</li>
+            <li>125 g of sugar</li>
+            <li>125 g of almond powder</li>
+            <li>1 teaspoon of ground cinnamon</li>
+        </ul>
 
-    <p>
-        Hello Adrian! Enjoy baking these delicious traditional Alsatian Christmas cookies.
-    </p>
+        <h2>To complete the recipe, you'll need to add:</h2>
+        <ul>
+            <li>125 g of soft butter</li>
+            <li>1 egg</li>
+            <li>Icing sugar (for dusting)</li>
+        </ul>
 
-    <h2 id="ingredients-en">Ingredients in the jar:</h2>
-    <ul>
-        <li>250 g of flour</li>
-        <li>125 g of sugar</li>
-        <li>125 g of almond powder</li>
-        <li>1 teaspoon of ground cinnamon</li>
-    </ul>
+        <h2>Preparation:</h2>
+        <ol>
+            <li>Preheat the oven to 180°C (th. 6).</li>
+            <li>Add all the dry ingredients from the jar to a bowl: flour, sugar, almond powder, and cinnamon.</li>
+            <li>Add the egg and soft butter. Knead the dough until smooth.</li>
+            <li>Form a ball with the dough and let it rest in the refrigerator for about 30 minutes.</li>
+            <li>On a lightly floured surface, roll out the dough to a thickness of about 5 mm.</li>
+            <li>Using various cookie cutters, cut out the cookies and place them on a baking sheet lined with parchment paper.</li>
+            <li>Bake for about 10-12 minutes, or until the cookies are lightly golden.</li>
+            <li>Let the cookies cool on a rack.</li>
+            <li>Dust the cooled cookies with icing sugar.</li>
+        </ol>
 
-    <h2 id="completer-en">To complete the recipe, you'll need to add:</h2>
-    <ul>
-        <li>125 g of soft butter</li>
-        <li>1 egg</li>
-        <li>Icing sugar (for dusting)</li>
-    </ul>
+        <p id="degustation-en"><strong>Enjoy your meal!</strong></p>
+        <img src="https://www.cookomix.com/wp-content/uploads/2016/12/schwowebredele-thermomix-800x600.jpg" alt="Schwowebredele Image">
+    </div>
 
-    <h2 id="preparation-en">Preparation:</h2>
-    <ol>
-        <li>Preheat the oven to 180°C (th. 6).</li>
-        <li>Add all the dry ingredients from the jar to a bowl: flour, sugar, almond powder, and cinnamon.</li>
-        <li>Add the egg and soft butter. Knead the dough until smooth.</li>
-        <li>Form a ball with the dough and let it rest in the refrigerator for about 30 minutes.</li>
-        <li>On a lightly floured surface, roll out the dough to a thickness of about 5 mm.</li>
-        <li>Using various cookie cutters, cut out the cookies and place them on a baking sheet lined with parchment paper.</li>
-        <li>Bake for about 10-12 minutes, or until the cookies are lightly golden.</li>
-        <li>Let the cookies cool on a rack.</li>
-        <li>Dust the cooled cookies with icing sugar.</li>
-    </ol>
-
-    <p id="degustation-en"><strong>Enjoy your meal!</strong></p>
-    <img src="https://www.cookomix.com/wp-content/uploads/2016/12/schwowebredele-thermomix-800x600.jpg" alt="Schwowebredele Image">
 </body>
 </html>
