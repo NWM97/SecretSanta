@@ -22,33 +22,30 @@
 
         /* ... (le reste de votre style CSS) ... */
 
-        h2 {
-            font-size: 24px;
-        }
-
-        body > h2 {
-            margin-top: 40px;
-        }
-
-        body > ol {
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: left;
+        ul, ol {
+            font-size: 16px;
+            line-height: 1.4;
+            margin-bottom: 20px;
+            text-align: center; /* Modification ici */
             display: inline-block;
             vertical-align: top;
         }
 
+        li {
+            margin-bottom: 10px;
+        }
+
         /* ... (le reste de votre style CSS) ... */
 
-        body {
-            overflow-y: scroll;
-            scroll-behavior: smooth;
+        p:last-child {
+            margin-top: 40px;
+            font-size: 24px; /* Modification ici */
+            font-weight: bold;
+            color: #d35400;
+            text-align: center;
         }
 
-        a {
-            text-decoration: none;
-            color: #3498db;
-        }
+        /* ... (le reste de votre style CSS) ... */
     </style>
 </head>
 <body>
@@ -95,7 +92,7 @@
         <li>Saupoudrez les biscuits refroidis de sucre glace.</li>
     </ol>
 
-    <p id="degustation">Bonne dégustation !</p>
+    <p id="degustation"><strong>Bonne dégustation !</strong></p>
     <img src="https://www.cookomix.com/wp-content/uploads/2016/12/schwowebredele-thermomix-800x600.jpg" alt="Schwowebredele Image">
 
     <!-- Section en anglais -->
@@ -113,7 +110,7 @@
         <li>1 teaspoon of ground cinnamon</li>
     </ul>
 
-    <h2 id="completer-en">To complete the recipe, you will need to add:</h2>
+    <h2 id="completer-en">To complete the recipe, you'll need to add:</h2>
     <ul>
         <li>125 g of soft butter</li>
         <li>1 egg</li>
@@ -133,7 +130,7 @@
         <li>Dust the cooled cookies with icing sugar.</li>
     </ol>
 
-    <p id="degustation-en">Enjoy your meal!</p>
+    <p id="degustation-en"><strong>Enjoy your meal!</strong></p>
     <img src="https://www.cookomix.com/wp-content/uploads/2016/12/schwowebredele-thermomix-800x600.jpg" alt="Schwowebredele Image">
 </body>
 </html>
